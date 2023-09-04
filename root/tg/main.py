@@ -25,7 +25,7 @@ storage = MemoryStorage()
 
 dp = Dispatcher(bot=bot, storage=storage)
 
-MANAGER_IDS = [459471362]
+MANAGER_IDS = [459471362, 1028276762]
 # MANAGER_IDS = [459471362]
 
 database_error_message = ("У нас проблемы с базой данных. Если Вы видите это сообщение, напишите, "
