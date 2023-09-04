@@ -120,3 +120,11 @@ def get_ikb_to_mark_order_as_done():
     ikb_to_mark_order_as_done.add(b1, b2)
     return ikb_to_mark_order_as_done
 
+
+def get_ikb_to_choose_device_type_to_leave_review():
+    ikb_to_choose_device_type_to_leave_review = InlineKeyboardMarkup(row_width=1)
+    b1 = InlineKeyboardButton(text='Мобильный телефон 📱', callback_data='get_instruction_for_mobile')
+    b2 = InlineKeyboardButton(text='Компьютер 🖥', callback_data='get_instruction_for_desktop')
+    ikb_to_choose_device_type_to_leave_review.add(b1, b2)
+    return ikb_to_choose_device_type_to_leave_review
+
