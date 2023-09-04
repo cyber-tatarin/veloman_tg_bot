@@ -128,7 +128,6 @@ async def wanna_leave_review(callback_query: types.CallbackQuery):
 @dp.callback_query_handler(lambda c: c.data == 'get_instruction_for_mobile', state='*')
 async def wanna_leave_review(callback_query: types.CallbackQuery):
     await callback_query.message.answer('Отлично!\n\nЧтобы оставить отзыв, нужно выполнить несколько простых шагов⬇️:\n\n'
-                                        'На телефоне:\n'
                                         '1. Зайдите в мобильное приложение Wildberries;\n'
                                         '2. Нажмите на иконку профиля в самом низу экрана (самая правая иконка);\n'
                                         '3. Нажмите на товар, который Вы купили в нашем магазине;\n'
